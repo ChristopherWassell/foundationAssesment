@@ -30,7 +30,7 @@ test('click get started button', async ({ page }) => {
 
   //Click how to install button 
   await page.getByRole('link', { name: 'How to install Playwright' }).click();
-
+ //Expect heading to be visible
   await expect(page.getByRole('heading', { name: 'Installing Playwright' })).toBeVisible();
 
   await page.pause()
