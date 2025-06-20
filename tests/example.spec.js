@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import { link } from 'fs';
+
 
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
@@ -33,5 +33,5 @@ test('click get started button', async ({ page }) => {
  //Expect heading to be visible
   await expect(page.getByRole('heading', { name: 'Installing Playwright' })).toBeVisible();
 
-  await page.pause()
+  
 });
